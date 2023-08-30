@@ -1,0 +1,148 @@
+* {
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+}
+
+body {
+    margin: 0;
+}
+
+.hero {
+    /* position: relative; */
+    width: 100%;
+    max-height: max-content;
+    background: linear-gradient(90deg, #fdb990, #f68c9a, #ff90fb);
+}
+
+/* ___________________ NAVIGATION BAR _______________________ */
+
+nav {
+    display: flex;
+    width: 84%;
+    margin: auto;
+    padding: 20px 0;
+    align-items: center;
+    justify-content: space-between;
+}
+
+nav ul li {
+    display: inline-block;
+    list-style: none;
+    margin: 10px 20px;
+}
+
+nav ul li a {
+    text-decoration: none;
+    color: #000;
+    font-weight: bold;
+}
+
+nav ul li a:hover {
+    color: rgb(255, 196, 0);
+    
+   /* Text-glow */
+    text-shadow:
+        0 0 7px rgb(152, 0, 114),
+        0 0 10px rgb(152, 0, 114),
+        0 0 21px rgb(152, 0, 114),
+        0 0 42px rgb(146, 0, 136),
+        0 0 82px rgb(146, 0, 136),
+        0 0 92px rgb(146, 0, 136),
+        0 0 102px rgb(146, 0, 136),
+        0 0 151px rgb(146, 0, 136);
+}
+
+.title {
+    margin-left: 8%;
+    font-size: x-large;
+    font-weight: bolder;
+}
+
+/* _______________________________ Styling Timeline __________________ */
+
+@import url('https://fonts.googleapis.com/css2?family=Jost:wght@200;300;400&display=swap');
+
+.design-section {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    background: linear-gradient(90deg, #fdb990, #f68c9a, #ff90fb);
+    min-height: 100vh;
+    padding: 100px 0;
+    font-family: Jost;
+}
+
+.design {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.timeline {
+    width: 80%;
+    height: auto;
+    max-width: auto;
+    margin: 0 auto;
+    display: flex;
+    flex-direction: column;
+}
+
+.timeline-content {
+    padding: 20px;
+    background: linear-gradient(45deg, #fdaa77, #f97f8f, #f03bea);
+    -webkit-box-shadow: 5px 5px 10px rgb(106, 5, 79), -5px -5px 10px #ffa268;
+    box-shadow: 5px 5px 10px rgb(106, 5, 79), -5px -5px 10px #ffa268;
+    /* background: #1f1f1f; */
+    /* -webkit-box-shadow: 5px 5px 10px #1a1a1a, -5px -5px 10px #242424;
+          box-shadow: 5px 5px 10px #1a1a1a, -5px -5px 10px #242424; */
+    border-radius: 5px;
+    color: white;
+    padding: 1.75rem;
+    transition: 0.4s ease;
+    overflow-wrap: break-word !important;
+    margin: 1rem;
+    margin-bottom: 20px;
+    border-radius: 6px;
+}
+
+.timeline-content h3 {
+    color: rgb(79, 77, 77)
+}
+
+.timeline-content h2 {
+    color: black;
+}
+
+.timeline-component {
+    margin: 0px 20px 20px 20px;
+}
+
+@media screen and (min-width: 768px) {
+    .timeline {
+        display: grid;
+        grid-template-columns: 1fr 3px 1fr;
+    }
+
+    .timeline-middle {
+        position: relative;
+        background-image: linear-gradient(45deg, #F27121, #E94057, #8A2387);
+        width: 3px;
+        height: 100%;
+    }
+
+    .main-middle {
+        opacity: 0;
+    }
+
+    .timeline-circle {
+        position: absolute;
+        top: 0;
+        left: 50%;
+        width: 15px;
+        height: 15px;
+        border-radius: 50%;
+        background-image: linear-gradient(45deg, #F27121, #E94057, #8A2387);
+        -webkit-transform: translateX(-50%);
+        transform: translateX(-50%);
+    }
+}

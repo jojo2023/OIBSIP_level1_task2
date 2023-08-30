@@ -1,0 +1,164 @@
+*{
+    margin: 0;
+    /* padding: 0; */
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+}
+
+.hero{
+    /* position: relative; */
+    width: 100%;
+    max-height: max-content;
+    background: linear-gradient(90deg, rgba(255,195,225,1) 15%, rgba(222,182,255,1) 66%, rgba(177,226,253,1) 100%);
+}
+
+section{
+    /* width: 100%; */
+    height:80vh;
+}
+/* ___________________ NAVIGATION BAR _______________________ */
+
+nav{
+    display: flex;
+    width: 84%;
+    margin: auto;
+    padding: 20px 0;
+    align-items: center;
+    justify-content: space-between;
+}
+
+nav ul li{
+    display: inline-block;
+    list-style: none;
+    margin: 10px 20px;
+}
+nav ul li a{
+    text-decoration: none;
+    color: #000;
+    font-weight: bold;
+}
+nav ul li a:hover{
+    color: rgb(0, 255, 225);
+
+    text-shadow:
+        0 0 7px rgb(0, 21, 255),
+        0 0 10px rgb(0, 21, 255),
+        0 0 21px rgb(0, 21, 255),
+        0 0 42px rgb(55, 49, 160),
+        0 0 82px rgb(31, 29, 83),
+        0 0 92px rgb(31, 29, 83),
+        0 0 102px rgb(31, 29, 83),
+        0 0 151px rgb(153, 141, 153);
+}
+
+/* ___________________ Info Section _______________________ */
+
+.info{
+    margin-right: 60%;
+    text-align: justify;
+}
+
+h2{
+    margin-bottom: 7px;
+    color: #000;
+}
+
+span{
+    color: orange;
+    font-size: larger;
+}
+
+.info, .skill{
+    margin-left: 8%;
+    /* margin-top: 5%; */
+}
+
+h1{
+    font-family: 'Times New Roman', Times, serif;
+    font-size: 50px;
+    color: black;
+    margin-top: 50px;
+    margin-bottom: 20px;
+}
+
+p{
+    color: black;
+    line-height: 22px;
+    text-align:inherit;
+    padding-bottom: 15px;
+}
+
+.info a{
+    background: #000;
+    padding: 10px 18px;
+    text-decoration: none;
+    font-weight: bold;
+    color: #fff;
+    display: inline-block;
+    margin: 30px 0;
+    border-radius: 5px;
+}
+/* __________________________ Images ___________________________  */
+
+.images{
+    width: 45%;
+    height: 70%;
+    position: absolute;
+    bottom: 40px;
+    right: 100px;
+}
+
+.images img{
+    height: 100%;
+    position: absolute;
+    left: 50%;
+    bottom: 0;
+    transform: translateX(-50%);
+    transition: bottom 1s, left 1s;
+    border-radius: 50%;
+    filter: saturate(1.5);
+    filter: contrast(1.4);
+}
+
+.images:hover .shape{
+    bottom: 40px;
+}
+
+
+/* ____________________________________________ SKILLS _______________________________________________ */
+
+/* Skill Bar Bckground*/
+ .container {
+    width: 90%;
+    background: linear-gradient(90deg, rgb(254, 157, 205) 55%, rgb(217, 170, 255) 86%, rgb(210, 239, 254) 100%);
+    border-radius: 20px;
+    margin-bottom: 20px;
+ }
+ h3{
+    padding-bottom: 15px;
+    color: rgb(191, 4, 4);
+ }
+
+ /* Skill Bar Above */
+ .skill1,.skill2,.skill3,.skill4 {
+    text-align: center;
+    font-weight: bolder;
+    padding-top: 3px;
+    padding-bottom: 1px;
+    color: white;
+    border-radius: 20px;
+    /* background-color: rgb(0, 166, 255); */
+    background: linear-gradient(90deg, rgb(255, 1, 128) 35%, rgb(169, 70, 250) 76%, rgb(9, 168, 254) 100%);
+ }
+
+ .skill1 {
+    width: 90%;
+ }
+ .skill2 {
+    width: 70%;
+ }
+ .skill3 {
+    width: 50%;
+ }
+ .skill4 {
+    width: 80%;
+ }
